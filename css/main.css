@@ -1,19 +1,118 @@
-/*
- * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
- *
- * Colors-
- * Green: #14a96d
- * White: #fff
- * Light gray: #f4f5f6
- * Border gray: #cfd7de
- * Dark text: #1b1f23
- * Lighter text: #66727c
- * Blue for links: #06748a
- * Blue for hovered links: #033641
- */
-
-/* Globals */
 body {
+  margin: 0;
   font-family: 'Cabin', sans-serif;
 }
 
+.flex{
+  display: flex;
+}
+
+.container{
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.container .flex{
+  align-items: center;
+}
+
+.container nav a{
+  text-decoration: none;
+  color: grey;
+  margin-right: 10px;
+}
+
+.flex>div img{
+  margin-right: 40px;
+  margin-left: 10px;
+}
+.banner{
+  background-image: url("../img/hero.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.banner_c{
+  width: 40%;
+  line-height: 1.5;
+  margin-left: 20px;
+  color: grey; 
+}
+
+main{
+  padding: 40px 100px;
+}
+
+.con_left{
+  width: 40%;
+}
+
+.con_right{
+  width: 40%;
+}
+
+.r_top{
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+}
+
+.r_bottom{
+  text-align: justify;
+  line-height: 2.0;
+}
+
+.r_bottom nav a{
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  text-align: center;
+}
+.action{
+  margin-top: 50px;
+  background-image: url("../img/lady-with-her-dogs.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.action .content{
+  position: absolute;
+  background-color: white;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.action .content .flex{
+  align-items: center;
+}
+.action .content .flex>a{
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+h2{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px){
+  html{
+      font-size: 10px;
+  }
+  .header a{
+      display: none;
+  }
+}

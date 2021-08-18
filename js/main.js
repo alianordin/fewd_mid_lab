@@ -17,3 +17,9 @@
  * 1) Make the responsive menu work!
  * 2) Implement a modal window - "Sign up now" CTA when someone clicks the 'Sign Up' button
  */ 
+
+ let heading = document.querySelector("h1");
+ heading.innerHTML = "We're The CAT People";
+ 
+ let image = document.querySelector("#image");
+ image.src = "https://www.purina.co.uk/sites/default/files/2020-12/Your-Cats-Age-in-Human-YearsHERO.jpg";
